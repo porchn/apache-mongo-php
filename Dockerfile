@@ -6,4 +6,6 @@ ENV MONGO_PHP_VERSION=1.6.14
 
 VOLUME ["/var/www", "/etc/apache2/sites-enabled"]
 
+EXPOSE 80 443
+
 CMD ["/run.sh"]
