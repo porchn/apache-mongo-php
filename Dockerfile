@@ -8,4 +8,6 @@ RUN apt-get -yq install telnet
 
 VOLUME ["/var/www", "/etc/apache2/sites-enabled"]
 
+EXPOSE 80 443
+
 CMD ["/run.sh"]
