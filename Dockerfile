@@ -7,7 +7,8 @@ ENV MONGO_PHP_VERSION=1.6.14
 RUN apt-get update && \
     apt-get -yq install \
     php5-mysql \
-	telnet
+    xinetd \
+    telnetd
 
 VOLUME ["/var/www", "/etc/apache2/sites-enabled"]
 
