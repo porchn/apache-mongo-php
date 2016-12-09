@@ -8,7 +8,10 @@ RUN apt-get update && \
     apt-get -yq install \
     php5-mysql \
     xinetd \
-    telnetd
+    telnetd \
+    openssl
+
+RUN a2enmod ssl
 
 VOLUME ["/var/www", "/etc/apache2/sites-enabled"]
 
