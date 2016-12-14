@@ -12,6 +12,8 @@ RUN apt-get update && \
     openssl
 
 RUN a2enmod ssl
+RUN a2enmod headers
+RUN a2enmod rewrite
 
 VOLUME ["/var/www", "/etc/apache2/sites-enabled"]
 
